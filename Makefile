@@ -26,6 +26,7 @@ clean:
 	rm -f *.o *.gch dwmblocks
 
 install: dwmblocks
+	cp -f scripts/* /opt/scripts/
 	mkdir -p ${DESTDIR}${PREFIX}/bin
 	cp -f dwmblocks ${DESTDIR}${PREFIX}/bin
 	chmod 755 ${DESTDIR}${PREFIX}/bin/dwmblocks
